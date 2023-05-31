@@ -60,11 +60,6 @@ img {
   font-size: 1.25rem;
 }
 
-.main-nav ul li a:hover,
-.main-nav ul li a:focus {
-  color: #FCC201;
-}
-
 form input,
 form textarea {
   display: block;
@@ -82,16 +77,11 @@ form textarea {
 
 form button {
   background: none;
-  border: 2px solid #FCC201;
-  color: #FCC201;
+  border: 2px solid black;
   padding: 1rem;
   text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-form button:hover,
-form button:focus {
-  background-color: #FCC201;
-  color: rgb(31, 30, 30);
+.site-footer {
+  padding: 2rem 0;
 }
