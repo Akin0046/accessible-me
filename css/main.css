@@ -1,12 +1,12 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   background-color: rgb(31, 30, 30);
-  color: white;  /* to fix contrast */
+  color: white;
   margin: 0;
   padding: 0;
 }
 
-skip-link {
+#skip-link {
   position: absolute;
   top: -40px;
   left: 0;
@@ -17,7 +17,7 @@ skip-link {
   transition: top 0.3s ease;
 }
 
-.skip-link:focus {
+#skip-link:focus {
   top: 0;
 }
 
@@ -60,6 +60,11 @@ img {
   font-size: 1.25rem;
 }
 
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+  color: #FCC201;
+}
+
 form input,
 form textarea {
   display: block;
@@ -77,11 +82,16 @@ form textarea {
 
 form button {
   background: none;
-  border: 2px solid black;
+  border: 2px solid #FCC201;
+  color: #FCC201;
   padding: 1rem;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.site-footer {
-  padding: 2rem 0;
+form button:hover,
+form button:focus {
+  background-color: #FCC201;
+  color: rgb(31, 30, 30);
 }
